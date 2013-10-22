@@ -1,0 +1,84 @@
+Encrpyts && Decrypts
+
+
+CAESER
+purpose
+	encrypt/decrypt P using Caesar cipher with key K
+preconditions
+	P: string of A..Z
+	K in 0..25
+
+
+# --------------------------------------------------------------
+
+
+SUBSTITUTION
+purpose
+	encrypt/decrypt P using substitution cipher with key K
+preconditions
+	P: string of A..Z
+	K: permutation of A..Z
+
+# --------------------------------------------------------------
+
+
+VERNAM
+purpose
+	encrypt/decrypt P using Vernam cipher with key K
+	if len(P) > len(K) then repeat the key as needed
+preconditions
+	P: string of A..Z
+	K: non-empty list of int in 0..25
+
+# --------------------------------------------------------------
+
+
+BOOK
+purpose
+	encrypt/decrypt P using book cipher with key K
+	if len(P) > len(K) then repeat the key as needed
+preconditions
+	P: string of A..Z
+	K: non-empty string of A..Z
+
+
+# --------------------------------------------------------------
+
+
+COLUMNAR TRANSPOSITION
+purpose
+	encrypt/decrypt P using columnar transposition cipher with key K
+preconditions
+	P: string of A..Z
+	K > 0
+
+			
+
+# --------------------------------------------------------------
+
+
+RSA 
+purpose
+	encrypt/decrypt P using RSA encryption with key K e,n
+preconditions
+	P: list of positive integers
+	e,n selected according to the RSA requirements
+
+
+# --------------------------------------------------------------
+
+
+
+TOOL: DIGRAM EVALUATOR
+purpose
+	return a dictionary D where
+		D.keys contains all of the digrams in S
+		D[d] is the number of occurrences of digram d in S
+preconditions
+	S is a string of A..Z
+
+
+
+
+
+
